@@ -49,11 +49,11 @@ def about(request):
         })
     )
 
-def cadastro_cursos(request):
+def lista_cursos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/cadastro_cursos.html',
+        'app/lista_cursos.html',
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de cursos',
@@ -63,11 +63,11 @@ def cadastro_cursos(request):
         })
     )
 
-def cadastro_vestibulares(request):
+def lista_vestibulares(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/cadastro_vestibulares.html',
+        'app/lista_vestibulares.html',
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de vestibulares',
